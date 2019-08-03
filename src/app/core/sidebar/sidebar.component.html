@@ -1,3 +1,16 @@
-<p>
-  sidebar works!
-</p>
+<mat-grid-list [cols]=1 [rowHeight]="'64px'">
+  <!-- <h3 >项目</h3> -->
+  <mat-grid-tile>
+    <mat-icon svgIcon="projects"></mat-icon>项目
+  </mat-grid-tile>
+  <!-- <h3 >日历</h3> -->
+  <mat-grid-tile>
+    <mat-icon svgIcon="month"></mat-icon>月视图
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <mat-icon svgIcon="week"></mat-icon>周视图
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <mat-icon [svgIcon]="today"></mat-icon>日视图
+  </mat-grid-tile>
+</mat-grid-list>
