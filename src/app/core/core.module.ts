@@ -3,21 +3,21 @@ import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './header/header.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { FooterComponent } from './footer/footer.component';
-import { MatToolbarModule, MatIconModule, MatButtonModule, MatIconRegistry } from '@angular/material';
+import { MatIconRegistry } from '@angular/material';
 import { HttpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DomSanitizer } from '@angular/platform-browser';
 import { loadSvgResources } from '../utils/svg.utils';
+import { SharedModule } from '../shared';
 
 // 适合仅加载一次的组件，header和footer和navibar
 @NgModule({
   imports: [
-    CommonModule,
-    MatToolbarModule,
-    MatIconModule,
-    MatButtonModule,
     HttpModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    SharedModule
   ],
   exports: [
     HeaderComponent, SidebarComponent, FooterComponent
