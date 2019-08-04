@@ -17,7 +17,6 @@ export class NewProjectComponent implements OnInit {
 
   ngOnInit() {
     // 接受传进来的参数
-    console.log(JSON.stringify(this.data));
     //使对话框也能够应用主题的变化
     this.ol.getContainerElement().classList.add(this.data.dark ? 'myapp-dark-theme' : "" );
   }
