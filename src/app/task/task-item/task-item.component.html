@@ -6,7 +6,7 @@
   <mat-checkbox class="status" [checked]='item.completed'></mat-checkbox>
   <div mat-line class="content" [ngClass]="{'completed': item.completed}">
       <!-- [mat-tooltip]= "item.desc" ，这个语句没用明白-->
-    <span mat-tooltip = "'item.desc'" >{{item.desc}}</span>
+    <span>{{item.desc}}</span>
   </div>
   <div mat-line class="bottom-bar" >
     <span class='duedate' *ngIf="item.dueDate">{{item.dueDate | date: "yy-MM-dd"}}</span>
