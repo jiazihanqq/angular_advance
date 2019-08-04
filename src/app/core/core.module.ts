@@ -10,6 +10,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DomSanitizer } from '@angular/platform-browser';
 import { loadSvgResources } from '../utils/svg.utils';
 import { SharedModule } from '../shared';
+import 'hammerjs';
 
 // 适合仅加载一次的组件，header和footer和navibar
 @NgModule({
