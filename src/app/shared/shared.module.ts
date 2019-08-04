@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SharedComponent } from './shared.component';
+import { ConfirmDialogComponent } from './confirm-dialog/confirm-dialog.component';
 import {
   MatToolbarModule,
   MatIconModule,
@@ -62,7 +63,14 @@ import {
     MatDatepickerModule,
     MatNativeDateModule,
     MatSelectModule,
+    ConfirmDialogComponent,
   ],
-  declarations: [SharedComponent]
+  declarations: [
+    SharedComponent,
+    ConfirmDialogComponent,
+  ],
+  entryComponents: [
+    ConfirmDialogComponent
+  ]
 })
 export class SharedModule { }

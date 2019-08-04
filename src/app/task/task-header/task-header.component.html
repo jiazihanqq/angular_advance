@@ -16,13 +16,13 @@
 </div>
 <!-- 菜单的模板在这里 -->
 <mat-menu #menu="matMenu">
-  <button mat-menu-item>
-    <mat-icon>mode_edit</mat-icon><span>修改列表名称</span>
+  <button mat-menu-item (click)="onEditTask()">
+    <mat-icon >mode_edit</mat-icon><span>修改列表名称</span>
   </button>
-  <button mat-menu-item>
-    <mat-icon [svgIcon]="'move'" class="material-icon" (click)="onMoveAll()"></mat-icon><span>移动本列表所有内容</span>
+  <button mat-menu-item (click)="onMoveAll()">
+    <mat-icon [svgIcon]="'move'" class="material-icon" ></mat-icon><span>移动本列表所有内容</span>
   </button>
-  <button mat-menu-item>
-    <mat-icon>delete_forever</mat-icon><span>删除</span>
+  <button mat-menu-item (click)="onDelTask()">
+    <mat-icon >delete_forever</mat-icon><span>删除</span>
   </button>
 </mat-menu>

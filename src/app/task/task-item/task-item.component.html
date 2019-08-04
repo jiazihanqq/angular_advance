@@ -2,8 +2,12 @@
 [ngClass]="{
   'priority-normal': item.priority === 3,
   'priority-important': item.priority === 2,
-  'priority-emergency': item.priority === 1}">
-  <mat-checkbox class="status" [checked]='item.completed'></mat-checkbox>
+  'priority-emergency': item.priority === 1}"
+
+  (click)="onItemClicked()">
+  <mat-checkbox class="status"
+  [checked]='item.completed'
+  (click)="onCheckBoxClick($event)"></mat-checkbox>
   <div mat-line class="content" [ngClass]="{'completed': item.completed}">
       <!-- [mat-tooltip]= "item.desc" ，这个语句没用明白-->
     <span>{{item.desc}}</span>
