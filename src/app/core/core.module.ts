@@ -20,12 +20,17 @@ import { SharedModule } from '../shared';
     SharedModule
   ],
   exports: [
-    HeaderComponent, SidebarComponent, FooterComponent
+    HeaderComponent,
+    SidebarComponent,
+    FooterComponent,
   ],
-  declarations: [HeaderComponent, SidebarComponent, FooterComponent]
+  declarations: [
+    HeaderComponent,
+    SidebarComponent,
+    FooterComponent]
 })
 export class CoreModule {
-  constructor(@SkipSelf() @Optional() parent: CoreModule,ir: MatIconRegistry, ds:DomSanitizer ) {
+  constructor(@SkipSelf() @Optional() parent: CoreModule, ir: MatIconRegistry, ds: DomSanitizer) {
     if (parent) {
       throw new Error("模块已经存在")
     }

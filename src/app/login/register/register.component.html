@@ -1,9 +1,16 @@
 <form action="">
   <mat-card>
     <mat-card-header>
-      <mat-card-title>登录：</mat-card-title>
+      <mat-card-title>注册：</mat-card-title>
     </mat-card-header>
     <mat-card-content>
+      <mat-form-field color='accent' class="full-width">
+        <!-- 前缀 -->
+        <span matProfix></span>
+        <input matInput type="text" placeholder="您的姓名">
+        <!-- 后缀 -->
+        <span matSuffix>@gmail.com</span>
+      </mat-form-field>
       <mat-form-field color='accent' class="full-width">
         <!-- 前缀 -->
         <span matProfix></span>
@@ -18,25 +25,30 @@
         <!-- 后缀 -->
         <!-- <span matSuffix>@gmail.com</span> -->
       </mat-form-field>
+      <mat-form-field color='accent' class="full-width">
+        <!-- 前缀 -->
+        <span matProfix></span>
+        <input matInput type="text" placeholder="重复输入您的密码">
+        <!-- 后缀 -->
+        <!-- <span matSuffix>@gmail.com</span> -->
+      </mat-form-field>
+      <!-- 头像 -->
+
+      <mat-grid-list cols="6" rowHeight="1:1">
+          <!-- colspan="2",rowspan="2" -->
+          <mat-grid-tile *ngFor="let item of items">
+            <mat-icon class="avatar" [svgIcon]="item"></mat-icon>
+          </mat-grid-tile>
+      </mat-grid-list>
+
       <!--  type为submit时，默认提交form表单 -->
       <!-- matbutton、mat-raised-button、mat-fab mat-mini-button-->
       <button mat-raised-button type="button">登录</button>
 
     </mat-card-content>
     <mat-card-actions class="text-right">
-      <p>还没有账户<a [routerLink]="[ '/register' ]">注册</a></p>
+      <p>还没有账户<a href="">注册</a></p>
       <p>忘记密码<a href="">找回</a></p>
     </mat-card-actions>
-  </mat-card>
-
-  <mat-card>
-    <mat-card-header>
-      <mat-card-title>每日佳句</mat-card-title>
-      <mat-card-subtitle>Neusoft</mat-card-subtitle>
-    </mat-card-header>
-    <img src="/assets/img/quote_fallback.jpg" alt="" mat-card-image>
-    <mat-card-content>
-      Neusoft
-    </mat-card-content>
   </mat-card>
 </form>

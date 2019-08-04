@@ -14,7 +14,7 @@ import { LoginModule } from './login/login.module';
     AppRoutingModule,
     CoreModule,
     MatSidenavModule,
-    LoginModule
+    LoginModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
