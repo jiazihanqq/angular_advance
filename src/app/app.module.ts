@@ -19,6 +19,7 @@ import { TaskModule } from './task/task.module';
     LoginModule,
     ProjectModule,
     TaskModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

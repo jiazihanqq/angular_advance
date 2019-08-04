@@ -18,6 +18,9 @@ mat-sidenav-container,
 
 main{
   flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .fill-remaining-space {
   flex: 1 1 auto;

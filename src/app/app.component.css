@@ -4,5 +4,9 @@ mat-sidenav{
 mat-sidenav-container.myapp-dark-theme{
   background-color: darkslategray;
 }
-
+.square{
+ width: 100px;
+ height:100px;
+ background-color: aquamarine;
+}
 
