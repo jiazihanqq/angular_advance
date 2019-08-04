@@ -13,6 +13,8 @@ import {
   MatAutocompleteModule,
   MatMenuModule,
   MatListModule,
+  MatCheckboxModule,
+  MatTooltipModule,
 } from '@angular/material';
 
 @NgModule({
@@ -29,6 +31,8 @@ import {
     MatAutocompleteModule,
     MatMenuModule,
     MatListModule,
+    MatCheckboxModule,
+    MatTooltipModule,
   ],
   exports: [
     CommonModule,
@@ -43,6 +47,8 @@ import {
     MatAutocompleteModule,
     MatMenuModule,
     MatListModule,
+    MatCheckboxModule,
+    MatTooltipModule,
   ],
   declarations: [SharedComponent]
 })

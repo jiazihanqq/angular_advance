@@ -6,18 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./task-home.component.scss']
 })
 export class TaskHomeComponent implements OnInit {
-  lists=[
+  lists = [
     {
       "id": 1,
       "name": "待办",
-      "tasks":[
+      "completed": false,
+      "tasks": [
         {
           "id": 1,
           "desc": "任务1",
           "owner": {
-            "id":"1",
-            "name":"张飞",
-            "avatar":"avatars:svg-11",
+            "id": "1",
+            "name": "张飞",
+            "avatar": "avatars:svg-11",
           },
           "dueDate": new Date(),
         },
@@ -25,9 +26,9 @@ export class TaskHomeComponent implements OnInit {
           "id": 2,
           "desc": "任务2",
           "owner": {
-            "id":"1",
-            "name":"赵云",
-            "avatar":"avatars:svg-11",
+            "id": "1",
+            "name": "赵云",
+            "avatar": "avatars:svg-11",
           },
           "dueDate": new Date(),
         },
@@ -35,9 +36,9 @@ export class TaskHomeComponent implements OnInit {
           "id": 3,
           "desc": "任务3",
           "owner": {
-            "id":"1",
-            "name":"关羽",
-            "avatar":"avatars:svg-11",
+            "id": "1",
+            "name": "关羽",
+            "avatar": "avatars:svg-11",
           },
           "dueDate": new Date(),
         }],
@@ -45,24 +46,27 @@ export class TaskHomeComponent implements OnInit {
     {
       "id": 2,
       "name": "进行中",
-      "tasks":[
+      "tasks": [
         {
           "id": 1,
           "desc": "任务1",
+          "priority":3,
           "owner": {
-            "id":"1",
-            "name":"张飞",
-            "avatar":"avatars:svg-11",
+            "id": "1",
+            "name": "张飞",
+            "avatar": "avatars:svg-11",
           },
+          "reminder":new Date(),
+          "completed": true,
           "dueDate": new Date(),
         },
         {
           "id": 2,
           "desc": "任务2",
           "owner": {
-            "id":"1",
-            "name":"赵云",
-            "avatar":"avatars:svg-11",
+            "id": "1",
+            "name": "赵云",
+            "avatar": "avatars:svg-11",
           },
           "dueDate": new Date(),
         },
@@ -70,9 +74,9 @@ export class TaskHomeComponent implements OnInit {
           "id": 3,
           "desc": "任务3",
           "owner": {
-            "id":"1",
-            "name":"关羽",
-            "avatar":"avatars:svg-11",
+            "id": "1",
+            "name": "关羽",
+            "avatar": "avatars:svg-11",
           },
           "dueDate": new Date(),
         }],
@@ -80,14 +84,16 @@ export class TaskHomeComponent implements OnInit {
     {
       "id": 3,
       "name": "完成",
-      "tasks":[
+      "completed": true,
+      "tasks": [
         {
           "id": 1,
-          "desc": "任务1",
+          "desc": "任务11111111111111111111111111111111111111111",
+          "priority":2,
           "owner": {
-            "id":"1",
-            "name":"张飞",
-            "avatar":"avatars:svg-11",
+            "id": "1",
+            "name": "张飞",
+            "avatar": "avatars:svg-11",
           },
           "dueDate": new Date(),
         },
@@ -95,9 +101,9 @@ export class TaskHomeComponent implements OnInit {
           "id": 2,
           "desc": "任务2",
           "owner": {
-            "id":"1",
-            "name":"赵云",
-            "avatar":"avatars:svg-11",
+            "id": "1",
+            "name": "赵云",
+            "avatar": "avatars:svg-11",
           },
           "dueDate": new Date(),
         },
@@ -105,9 +111,9 @@ export class TaskHomeComponent implements OnInit {
           "id": 3,
           "desc": "任务3",
           "owner": {
-            "id":"1",
-            "name":"关羽",
-            "avatar":"avatars:svg-11",
+            "id": "1",
+            "name": "关羽",
+            "avatar": "avatars:svg-11",
           },
           "dueDate": new Date(),
         }],
