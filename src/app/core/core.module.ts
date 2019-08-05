@@ -6,10 +6,11 @@ import { FooterComponent } from './footer/footer.component';
 import { MatIconRegistry } from '@angular/material';
 import { HttpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DomSanitizer } from '@angular/platform-browser';
 import { loadSvgResources } from '../utils/svg.utils';
 import { SharedModule } from '../shared';
+import { AppRoutingModule } from '../app.routing.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import 'hammerjs';
 
 // 适合仅加载一次的组件，header和footer和navibar
@@ -17,13 +18,15 @@ import 'hammerjs';
   imports: [
     HttpModule,
     HttpClientModule,
+    SharedModule,
+    AppRoutingModule,
     BrowserAnimationsModule,
-    SharedModule
   ],
   exports: [
     HeaderComponent,
     SidebarComponent,
     FooterComponent,
+    AppRoutingModule,
   ],
   declarations: [
     HeaderComponent,

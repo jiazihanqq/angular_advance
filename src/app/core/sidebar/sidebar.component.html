@@ -1,16 +1,24 @@
-<mat-grid-list [cols]=1 [rowHeight]="'64px'">
-  <!-- <h3 >项目</h3> -->
-  <mat-grid-tile>
-    <mat-icon svgIcon="projects"></mat-icon>项目
-  </mat-grid-tile>
-  <!-- <h3 >日历</h3> -->
-  <mat-grid-tile>
-    <mat-icon svgIcon="month"></mat-icon>月视图
-  </mat-grid-tile>
-  <mat-grid-tile>
-    <mat-icon svgIcon="week"></mat-icon>周视图
-  </mat-grid-tile>
-  <mat-grid-tile>
-    <mat-icon [svgIcon]="today"></mat-icon>日视图
-  </mat-grid-tile>
-</mat-grid-list>
+<mat-nav-list>
+  <h3 mat-subheader>项目</h3>
+  <mat-list-item [routerLink]="['/project']">
+    <mat-icon  matListIcon svgIcon="projects" ></mat-icon>
+    <span matLine>项目首页</span>
+    <span matLine matSubheader> 查看您参与的全部项目 </span>
+  </mat-list-item>
+  <h3 mat-subheader>日历</h3>
+  <mat-list-item [routerLink]="['/tasklists']">
+    <mat-icon matListIcon svgIcon="month"></mat-icon>
+    <span matLine>月视图</span>
+    <span matLine matSubheader>  按月方式查看事件 </span>
+  </mat-list-item>
+  <mat-list-item>
+    <mat-icon matListIcon svgIcon="week"></mat-icon>
+    <span matLine>周视图</span>
+    <span matLine matSubheader>  按星期方式查看事件 </span>
+  </mat-list-item>
+  <mat-list-item>
+    <mat-icon matListIcon [svgIcon]="today"></mat-icon>
+    <span matLine>日视图</span>
+    <span matLine matSubheader>  按天方式查看事件 </span>
+  </mat-list-item>
+</mat-nav-list>

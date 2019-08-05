@@ -20,6 +20,7 @@ import {
   MatDatepickerModule,
   MatNativeDateModule,
   MatSelectModule,
+  MatSidenavModule,
 
 } from '@angular/material';
 
@@ -43,6 +44,7 @@ import {
     MatDatepickerModule,
     MatNativeDateModule,
     MatSelectModule,
+    MatSidenavModule,
   ],
   exports: [
     CommonModule,
@@ -64,6 +66,7 @@ import {
     MatNativeDateModule,
     MatSelectModule,
     ConfirmDialogComponent,
+    MatSidenavModule,
   ],
   declarations: [
     SharedComponent,
