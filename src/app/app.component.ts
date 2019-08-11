@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Inject } from '@angular/core';
 import { OverlayContainer } from '@angular/cdk/overlay';
 
 @Component({
@@ -8,7 +8,8 @@ import { OverlayContainer } from '@angular/cdk/overlay';
 })
 export class AppComponent {
   darkTheme = false;
-  constructor(private ol: OverlayContainer){
+  constructor(private ol: OverlayContainer, @Inject("BASE_CONFIG") config){
+    console.log(config );
 
   }
   switchTheme(checked){

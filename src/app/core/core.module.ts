@@ -12,7 +12,12 @@ import { SharedModule } from '../shared';
 import { AppRoutingModule } from '../app.routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import 'hammerjs';
-
+import 'rxjs/add/observable/combinLatest';
+import 'rxjs/add/observable/from';
+import 'rxjs/add/opertator/take';
+import 'rxjs/add/opertator/distinctUntilChanged';
+import 'rxjs/add/opertator/combinLatest';
+import '../utils/debug.util';
 // 适合仅加载一次的组件，header和footer和navibar
 @NgModule({
   imports: [
@@ -31,7 +36,11 @@ import 'hammerjs';
   declarations: [
     HeaderComponent,
     SidebarComponent,
-    FooterComponent]
+    FooterComponent
+  ],
+  providers:[
+    {provide:"BASE_CONFIG", useValue:"http://localhost:3000"}
+  ]
 })
 export class CoreModule {
   constructor(@SkipSelf() @Optional() parent: CoreModule, ir: MatIconRegistry, ds: DomSanitizer) {
