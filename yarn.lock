@@ -179,9 +179,9 @@
   dependencies:
     tslib "^1.7.1"
 
-"@angular/material@6.4.6":
-  version "6.4.6"
-  resolved "https://registry.yarnpkg.com/@angular/material/-/material-6.4.6.tgz#30c3dd83173f42a1df28db084930f242706d323a"
+"@angular/material@^6.4.6":
+  version "6.4.7"
+  resolved "https://registry.yarnpkg.com/@angular/material/-/material-6.4.7.tgz#3c8f2d6a6a7904d97be29e06a84ffb62a8da6c16"
   dependencies:
     tslib "^1.7.1"
   optionalDependencies:
@@ -503,8 +503,8 @@ acorn-dynamic-import@^3.0.0:
     acorn "^5.0.0"
 
 acorn@^5.0.0:
-  version "5.7.1"
-  resolved "https://registry.yarnpkg.com/acorn/-/acorn-5.7.1.tgz#f095829297706a7c9776958c0afc8930a9b9d9d8"
+  version "5.7.4"
+  resolved "https://registry.yarnpkg.com/acorn/-/acorn-5.7.4.tgz#3e8d8a9947d0599a1796d10225d7432f4a4acf5e"
 
 addressparser@1.0.1:
   version "1.0.1"
@@ -869,7 +869,7 @@ aws4@^1.6.0:
 
 axios@^0.15.3:
   version "0.15.3"
-  resolved "http://registry.npmjs.org/axios/-/axios-0.15.3.tgz#2c9d638b2e191a08ea1d6cc988eadd6ba5bdc053"
+  resolved "https://registry.npmjs.org/axios/-/axios-0.15.3.tgz#2c9d638b2e191a08ea1d6cc988eadd6ba5bdc053"
   dependencies:
     follow-redirects "1.0.0"
 
@@ -5967,7 +5967,7 @@ repeating@^2.0.0:
 
 request@2.75.x:
   version "2.75.0"
-  resolved "http://registry.npmjs.org/request/-/request-2.75.0.tgz#d2b8268a286da13eaa5d01adf5d18cc90f657d93"
+  resolved "https://registry.npmjs.org/request/-/request-2.75.0.tgz#d2b8268a286da13eaa5d01adf5d18cc90f657d93"
   dependencies:
     aws-sign2 "~0.6.0"
     aws4 "^1.2.1"
