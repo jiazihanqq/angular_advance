@@ -179,9 +179,9 @@
   dependencies:
     tslib "^1.7.1"
 
-"@angular/material@6.4.6":
-  version "6.4.6"
-  resolved "https://registry.yarnpkg.com/@angular/material/-/material-6.4.6.tgz#30c3dd83173f42a1df28db084930f242706d323a"
+"@angular/material@^6.4.6":
+  version "6.4.7"
+  resolved "https://registry.yarnpkg.com/@angular/material/-/material-6.4.7.tgz#3c8f2d6a6a7904d97be29e06a84ffb62a8da6c16"
   dependencies:
     tslib "^1.7.1"
   optionalDependencies:
@@ -869,7 +869,7 @@ aws4@^1.6.0:
 
 axios@^0.15.3:
   version "0.15.3"
-  resolved "http://registry.npmjs.org/axios/-/axios-0.15.3.tgz#2c9d638b2e191a08ea1d6cc988eadd6ba5bdc053"
+  resolved "https://registry.npmjs.org/axios/-/axios-0.15.3.tgz#2c9d638b2e191a08ea1d6cc988eadd6ba5bdc053"
   dependencies:
     follow-redirects "1.0.0"
 
@@ -5408,8 +5408,8 @@ path-key@^2.0.0, path-key@^2.0.1:
   resolved "https://registry.yarnpkg.com/path-key/-/path-key-2.0.1.tgz#411cadb574c5a140d3a4b1910d40d80cc9f40b40"
 
 path-parse@^1.0.5:
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/path-parse/-/path-parse-1.0.6.tgz#d62dbb5679405d72c4737ec58600e9ddcf06d24c"
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/path-parse/-/path-parse-1.0.7.tgz#fbc114b60ca42b30d9daf5858e4bd68bbedb6735"
 
 path-proxy@~1.0.0:
   version "1.0.0"
@@ -5967,7 +5967,7 @@ repeating@^2.0.0:
 
 request@2.75.x:
   version "2.75.0"
-  resolved "http://registry.npmjs.org/request/-/request-2.75.0.tgz#d2b8268a286da13eaa5d01adf5d18cc90f657d93"
+  resolved "https://registry.npmjs.org/request/-/request-2.75.0.tgz#d2b8268a286da13eaa5d01adf5d18cc90f657d93"
   dependencies:
     aws-sign2 "~0.6.0"
     aws4 "^1.2.1"
